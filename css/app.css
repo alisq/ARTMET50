@@ -49,15 +49,40 @@ h2#bottom {
   font-size: 3vw;
   z-index: 1;
   border-top: 1px solid #262626;
-  color: #262626; }
+  color: #262626;
+  background: #f7fff9; }
 
 #container {
   height: calc(100vh - 6.5vw - 3.5vw);
   position: fixed;
   top: 6.5vw;
   width: 100%;
-  overflow: scroll; }
+  overflow: scroll;
+  padding: 0.5em; }
 
 .interior {
   max-width: 1000px;
-  margin: 3em auto; }
+  margin: auto; }
+
+p {
+  margin-bottom: 0.5em; }
+
+@media (max-width: 1000px) {
+  h1#top {
+    top: 0;
+    width: 100%;
+    height: 15.5vw;
+    font-size: 15vw;
+    border-bottom: none; }
+  h2#bottom {
+    top: 15.4vw;
+    width: 100%;
+    height: 15.5vw;
+    font-size: 15vw;
+    border-bottom: 1px solid #262626; }
+  #container {
+    position: static;
+    padding-top: 31vw;
+    height: auto;
+    width: 100%;
+    border-top: none; } }

@@ -12,6 +12,6 @@ $('h2#bottom').marquee({
 	speed: 250,
 	gap: 100,
 	delayBeforeStart: 0,
-	direction: 'left',
+	direction: 'right',
 	pauseOnHover: true
 });
