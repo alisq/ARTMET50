@@ -1,0 +1,24 @@
+{
+  "name": "artmet50",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass sass/main.scss css/app.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisq/ARTMET50.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alisq/ARTMET50/issues"
+  },
+  "homepage": "https://github.com/alisq/ARTMET50#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.79.4"
+  }
+}
