@@ -43,3 +43,7 @@ h2#bottom {
   top: 8.5vw;
   width: 100%;
   overflow: scroll; }
+
+.interior {
+  max-width: 1000px;
+  margin: 3em auto; }
