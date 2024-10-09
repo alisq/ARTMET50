@@ -1,3 +1,6 @@
+$light: #f7fff9;
+$dark: #262626;
+
 *,
 *::after,
 *::before {
@@ -5,13 +8,21 @@
     padding: 0;
     margin: 0;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight:normal;
+    font-size:1em;
+    
+}
 @font-face {
-    font-family: 'FK Screamer';
-    src: url('/css/fonts/FKScreamer-Bold.woff2') format('woff2');
+    font-family: 'scream';
+    src: url('fonts/FKScreamer-Bold.woff2') format('woff2');
 }
 
 body {
-    
+    font-size:2em;
+    background:$light;
+    color:$dark;
 }
 
 h1#top {
@@ -19,15 +30,17 @@ h1#top {
     top:0;
     left:0;
     width:100%;
-    height:8.5vw;
+    height:6.5vw;
     letter-spacing: 0.02em;
-    background: #000;
-    color:#FFF;
-    font-family: 'FK Screamer';
+    background: $dark;
+    color:$light;
+    font-family: 'scream';
     text-transform: uppercase;
     padding:0;
     margin:0;
-    font-size:8vw
+    font-size:6vw;
+    z-index:1;
+    border-bottom:1px solid $light;
 }
 
 h2#bottom {
@@ -35,19 +48,22 @@ h2#bottom {
     bottom:0;
     left:0;
     width:100%;
-    height:5.5vw;
+    height:3.5vw;
     letter-spacing: 0.02em;
-    font-family: 'FK Screamer';
+    font-family: 'scream';
     text-transform: uppercase;
     padding:0;
     margin:0;
-    font-size:5vw
+    font-size:3vw;
+    z-index:1;
+    border-top:1px solid $dark;
+    color:$dark;
 }
 
 #container {
-    height:calc(100vh - 14vw);
+    height:calc(100vh - 6.5vw - 3.5vw);
     position:fixed;
-    top:8.5vw;
+    top:6.5vw;
     width:100%;
     overflow:scroll;
 }
