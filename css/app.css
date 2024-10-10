@@ -90,6 +90,15 @@ h3 {
   font-family: 'scream';
   text-transform: uppercase; }
 
+table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0.5em auto; }
+
+.right-align {
+  text-align: right;
+  font-weight: bold; }
+
 #container {
   height: calc(100vh - 6.5vw);
   position: fixed;
@@ -101,7 +110,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
-  margin: auto; }
+  margin: 0.5em auto; }
   .split div {
     text-align: center; }
 

@@ -1,6 +1,12 @@
 $light: #f7fff9;
 $dark: #262626;
 
+
+@mixin type-spacing {
+    max-width:1000px;
+    margin:  0.5em auto;
+}
+
 *,
 *::after,
 *::before {
@@ -114,6 +120,14 @@ h3 {
 
     
 }
+table {
+    width:100%;
+    @include type-spacing;
+}
+.right-align {
+    text-align: right;
+    font-weight:bold;
+}
 
 #container {
     height:calc(100vh - 6.5vw);
@@ -131,16 +145,14 @@ h3 {
 .split {
     display:grid;
     grid-template-columns:1fr 1fr;
-    max-width: 1000px;
-    margin:auto;
+    @include type-spacing;
     & div {
         text-align:center;
     }
 }
 
 p {
-    max-width:1000px;
-    margin:  0.5em auto;
+    @include type-spacing;
 }
 
 @media (max-width:1000px) {
