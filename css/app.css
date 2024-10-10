@@ -93,7 +93,7 @@ h3 {
 table {
   width: 100%;
   max-width: 1000px;
-  margin: 0.5em auto; }
+  margin: 1em auto; }
 
 .right-align {
   text-align: right;
@@ -110,13 +110,13 @@ table {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
-  margin: 0.5em auto; }
+  margin: 1em auto; }
   .split div {
     text-align: center; }
 
 p {
   max-width: 1000px;
-  margin: 0.5em auto; }
+  margin: 1em auto; }
 
 @media (max-width: 1000px) {
   h1#top {
