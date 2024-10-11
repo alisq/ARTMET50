@@ -112,7 +112,7 @@ table {
 
 .split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1FR;
   max-width: 1000px;
   margin: 1em auto; }
   .split div {
@@ -156,6 +156,7 @@ p {
     border-bottom: none; }
   h1#bottom {
     width: 100%;
+    overflow: hidden;
     border-bottom: 1px solid #262626;
     height: 15.25vw;
     font-size: 15vw; }
@@ -169,4 +170,9 @@ p {
     width: 100%;
     border-top: none; }
   p {
-    margin: 0.5em; } }
+    margin: 0.5em; }
+  .split {
+    display: block; }
+    .split div {
+      max-width: 1000px;
+      margin: 1em auto; } }

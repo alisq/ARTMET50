@@ -150,7 +150,7 @@ table {
 
 .split {
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr 1FR;
     @include type-spacing;
     & div {
         text-align:center;
@@ -206,6 +206,7 @@ p {
     
     h1#bottom {
         width:100%;
+        overflow:hidden;
         border-bottom:1px solid $dark;
         height:15.25vw;
         font-size:15vw;
@@ -228,6 +229,14 @@ p {
 
     p {
         margin:0.5em;
+    }
+
+    .split {
+        display:block;
+
+        & div {
+            @include type-spacing()
+        }
     }
 
 }
