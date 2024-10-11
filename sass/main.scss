@@ -77,16 +77,20 @@ h1 {
     margin:0;
     font-size:6vw;
     height:6.5vw;
+    
         
     &#top {
         position:fixed;
         white-space: nowrap; 
         top:0;
-        left:-200px ;
+        left:0;
+        
         // width:100%;
         
         z-index:1;
         border-bottom:1px solid $light;
+        overflow:hidden;
+        width:100vw;
     }
 
     &#bottom {
@@ -170,7 +174,7 @@ p {
     bottom:0;
     left:0;
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     font-family: 'scream';
     text-transform: uppercase;
     padding:0;
@@ -197,10 +201,12 @@ p {
     h1#top {
         top:0;
         left:0;
-        width:100%;
+        
         height:15.5vw;
         font-size:15vw;
         border-bottom:none;
+        
+        
         
     }
     
