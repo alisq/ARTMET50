@@ -105,6 +105,9 @@ h4 {
 .small {
   font-size: 0.8em; }
 
+.text-center {
+  text-align: center; }
+
 table {
   width: 100%;
   max-width: 1000px;
