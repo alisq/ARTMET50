@@ -96,6 +96,15 @@ h3 {
   font-family: 'scream';
   text-transform: uppercase; }
 
+h4 {
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 1em 0; }
+
+.small {
+  font-size: 0.8em; }
+
 table {
   width: 100%;
   max-width: 1000px;
@@ -117,8 +126,6 @@ table {
   grid-template-columns: 1fr 1fr 1FR;
   max-width: 1000px;
   margin: 1em auto; }
-  .split div {
-    text-align: center; }
 
 p {
   max-width: 1000px;

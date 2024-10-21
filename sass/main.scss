@@ -98,6 +98,7 @@ h1 {
         position:relative;
         z-index:10;
     }
+
     
     
 }
@@ -130,6 +131,20 @@ h3 {
 
     
 }
+
+h4 {
+    font-weight:bold;
+    font-size:1.3em;
+    text-align:center;
+    margin:1em 0;
+}
+
+
+.small {
+    font-size:0.8em;
+}
+
+
 table {
     width:100%;
     @include type-spacing;
@@ -157,7 +172,7 @@ table {
     grid-template-columns:1fr 1fr 1FR;
     @include type-spacing;
     & div {
-        text-align:center;
+        // text-align:center;
     }
 }
 
