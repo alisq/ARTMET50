@@ -32,7 +32,17 @@ $('h1#bottom').marquee({
 });
 
 
+$(".thumb").click(function(){
+	ourURL = $(this).find("img").attr("src").replace("/small","/big");
+	$("#cover img").attr("src",ourURL);
+	$("#cover").addClass("active");
 
+
+})
+
+$("#cover").click(function(){
+	$(this).removeClass("active");
+})
 
 // $('h2#bottom').marquee({
 // 	speed: 250,
