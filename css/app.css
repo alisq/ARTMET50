@@ -143,6 +143,8 @@ p {
   grid-row-gap: 0.5em; }
   #artworks .thumb img {
     max-width: 100%; }
+  #artworks .thumb .small {
+    margin-top: 0; }
 
 #cover {
   position: fixed;
@@ -166,6 +168,21 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  #cover p {
+    position: absolute;
+    left: 1em;
+    bottom: 1em; }
+
+#name-space-pic {
+  position: fixed;
+  pointer-events: none;
+  top: -2100px;
+  left: -1100px;
+  background: black;
+  width: 250px;
+  height: auto;
+  z-index: 500;
+  transition: all 0.3s; }
 
 #footer {
   position: fixed;

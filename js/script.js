@@ -4,7 +4,7 @@ if ($(window).width() > 1000) {
 	$('#container').scroll(function(){
 		st = $("#container").scrollTop()/($(".interior").height()-$('#container').height())
 		a = -200+(-2000*st)+"px";
-		console.log(a)
+		
 		$("h1#top").css("text-indent",a)
 		// $("h1#bottom").css("text-indent",-600+(500*st)+"px")
 		})
@@ -34,7 +34,9 @@ $('h1#bottom').marquee({
 
 $(".thumb").click(function(){
 	ourURL = $(this).find("img").attr("src").replace("/small","/big");
+	ourText = $(this).find(".small").html();
 	$("#cover img").attr("src",ourURL);
+	$("#cover p").html(ourText);
 	$("#cover").addClass("active");
 
 
@@ -42,6 +44,31 @@ $(".thumb").click(function(){
 
 $("#cover").click(function(){
 	$(this).removeClass("active");
+});
+
+$(document).on('keyup', function(e) {
+	
+	if (e.key == "Escape") $("#cover").removeClass("active");
+  });
+
+$(".name-space").hover(function(e){
+	console.log($(this).attr("data-id"))
+	picSRC = $($(this).attr("data-id")+" img").attr("src");
+	
+
+	$("#name-space-pic").attr("src",picSRC)
+	$("#name-space-pic").css({
+		"top":e.clientY+"px",
+		"left":e.clientX+"px"
+
+	})
+}, function(){
+	
+	$("#name-space-pic").attr("style","")
+}).click(function(){
+	namespace = $(this).data("id");
+	
+	$(namespace).click()
 })
 
 // $('h2#bottom').marquee({
