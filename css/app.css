@@ -216,7 +216,7 @@ p {
     font-size: 15vw;
     border-bottom: none; }
   #artworks {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
   #cover img {
     display: block;
     max-width: 80%;
@@ -229,7 +229,7 @@ p {
     font-size: 15vw; }
   h2#middle {
     width: 100%;
-    font-size: 30px; }
+    font-size: 40px; }
   #container {
     position: static;
     margin-top: 15.5vw;
@@ -238,8 +238,25 @@ p {
     border-top: none; }
   p {
     margin: 0.5em; }
+  .text-center {
+    text-align: left; }
+  h4 {
+    margin: 0 0.5rem;
+    text-align: left; }
   .split {
-    display: block; }
+    display: block;
+    margin: 0 0.5em; }
     .split div {
       max-width: 1000px;
-      margin: 1em auto; } }
+      margin: 1em auto; }
+    .split .small {
+      margin-top: 0; }
+  #footer {
+    display: flex;
+    background: transparent;
+    text-align: center; }
+    #footer div {
+      display: inline-block;
+      background: #262626;
+      margin: 0 0.25em;
+      padding: 0.35em; } }
