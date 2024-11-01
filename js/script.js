@@ -65,6 +65,7 @@ $(".name-space").hover(function(e){
 }, function(){
 	
 	$("#name-space-pic").attr("style","")
+	$("#name-space-pic").attr("src","")
 }).click(function(){
 	namespace = $(this).data("id");
 	
