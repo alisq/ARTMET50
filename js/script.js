@@ -52,7 +52,7 @@ $(document).on('keyup', function(e) {
   });
 
 $(".name-space").hover(function(e){
-	console.log($(this).attr("data-id"))
+	
 	picSRC = $($(this).attr("data-id")+" img").attr("src");
 	
 
