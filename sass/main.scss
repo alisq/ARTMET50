@@ -140,6 +140,12 @@ h4 {
 }
 
 
+.name-space:hover {
+    -webkit-text-stroke: 1px $dark;
+            text-stroke: 1px $light;
+            color:$light;
+}
+
 .small {
     font-size:0.7em;
     // line-height:0.9em;
@@ -284,7 +290,10 @@ p {
         }
 
         & a:hover {
-            color:rgba($light, 0.8)
+            // color:rgba($light, 0.8);
+            -webkit-text-stroke: 1px $light;
+            text-stroke: 1px $light;
+            color:$dark;
         }
     }
 }

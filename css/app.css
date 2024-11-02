@@ -102,6 +102,11 @@ h4 {
   text-align: center;
   margin: 1em 0; }
 
+.name-space:hover {
+  -webkit-text-stroke: 1px #262626;
+  text-stroke: 1px #f7fff9;
+  color: #f7fff9; }
+
 .small {
   font-size: 0.7em; }
 
@@ -207,7 +212,9 @@ p {
     #footer div a:link {
       text-decoration: none; }
     #footer div a:hover {
-      color: rgba(247, 255, 249, 0.8); }
+      -webkit-text-stroke: 1px #f7fff9;
+      text-stroke: 1px #f7fff9;
+      color: #262626; }
 
 @media (max-width: 1000px) {
   h1#top {
