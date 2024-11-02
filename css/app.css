@@ -164,7 +164,7 @@ p {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: rgba(247, 255, 249, 0.9);
+  background: rgba(247, 255, 249, 0.95);
   z-index: 10000;
   top: 0;
   left: 0;
@@ -177,11 +177,10 @@ p {
   #cover img {
     display: block;
     max-width: 1000px;
-    max-height: calc(100% - 6.5vw);
+    max-height: calc(100% - 2em);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    top: 1em;
+    right: 1em; }
   #cover p {
     position: absolute;
     left: 1em;
