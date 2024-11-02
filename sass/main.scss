@@ -203,12 +203,12 @@ p {
         // text-align:center;
 
         &:hover img {
-            transform:scale(0.9);
+            transform:scale(0.95);
         }
 
 
         &:hover .small {
-            transform:translate(1em, -1em);
+            transform:translate(0.3em, -0.5em);
         }
 
         & img {
