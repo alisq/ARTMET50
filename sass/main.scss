@@ -201,13 +201,27 @@ p {
 
     & .thumb {
         // text-align:center;
+
+        &:hover img {
+            transform:scale(0.9);
+        }
+
+
+        &:hover .small {
+            transform:translate(1em, -1em);
+        }
+
         & img {
             // display:inline-block;
             max-width:100%;
+            transition:transform 0.2s;
+
+            
         }
 
         & .small {
             margin-top:0;
+            transition:transform 0.2s;
         }
     }
 }
