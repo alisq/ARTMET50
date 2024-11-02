@@ -139,6 +139,9 @@ h4 {
     margin:1em 0;
 }
 
+.name-space {
+    transition:color 0.2s;
+}
 
 .name-space:hover {
     -webkit-text-stroke: 1px $dark;
