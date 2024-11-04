@@ -44,6 +44,7 @@ $(".thumb").click(function(){
 
 $("#cover").click(function(){
 	$(this).removeClass("active");
+	$("#cover img").attr("src","");
 });
 
 $(document).on('keyup', function(e) {
