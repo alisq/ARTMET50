@@ -141,12 +141,14 @@ h4 {
 
 .name-space {
     transition:color 0.2s;
+    position:relative;
 }
 
 .name-space:hover {
     -webkit-text-stroke: 1px $dark;
             text-stroke: 1px $light;
             color:$light;
+            z-index:501;
 }
 
 .small {

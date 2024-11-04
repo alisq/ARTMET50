@@ -103,12 +103,14 @@ h4 {
   margin: 1em 0; }
 
 .name-space {
-  transition: color 0.2s; }
+  transition: color 0.2s;
+  position: relative; }
 
 .name-space:hover {
   -webkit-text-stroke: 1px #262626;
   text-stroke: 1px #f7fff9;
-  color: #f7fff9; }
+  color: #f7fff9;
+  z-index: 501; }
 
 .small {
   font-size: 0.7em; }
