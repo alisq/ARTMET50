@@ -118,6 +118,10 @@ h4 {
 .text-center {
   text-align: center; }
 
+#sponsors img {
+  display: inline-block;
+  vertical-align: middle; }
+
 table {
   width: 100%;
   max-width: 1000px;

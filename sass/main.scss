@@ -161,6 +161,13 @@ h4 {
 }
 
 
+#sponsors {
+    & img {
+        display:inline-block;
+        vertical-align:middle;
+    }
+}
+
 table {
     width:100%;
     @include type-spacing;
